@@ -19,11 +19,11 @@ export default function Home() {
         {/* Now Playing Section */}
         <NowPlaying />
 
-        {/* About Section */}
+        {/* Currently Section */}
         <section className="mb-16">
-          <h2 className="text-medium mb-4">about</h2>
+          <h2 className="text-medium mb-4">currently</h2>
           <p className="text-regular mb-6 leading-relaxed">
-            i&apos;m josh, currently building{" "}
+            building{" "}
             <a 
               href="https://outlit.ai/" 
               className="underline hover:text-gray-900 dark:hover:text-white transition-colors"
@@ -31,11 +31,25 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               outlit
-            </a>. see how customers find you, use your product, and convert to paid.
+            </a>.
+            <br />
+            Understand how customers find you, use your product, and convert to paid.
+          </p>
+        </section>
+
+        {/* About Section */}
+        <section className="mb-16">
+          <h2 className="text-medium mb-4">about</h2>
+          <p className="text-regular mb-6 leading-relaxed">
+            canadian living in san francisco.
             <br /><br />
-            i built the hardest naruto trivia game on the internet (give it a shot).
+            previously built design systems for boring enterprise software.
             <br /><br />
-            working out of coffee shops around the mission and north beach in san francisco.
+            interested in AI, fusion energy, agritech, and fantasy football.
+            <br /><br />
+            i write about things i find interesting and build projects, like the hardest naruto trivia quiz on the internet.
+            <br /><br />
+            usually working out of coffee shops around the mission and north beach.
           </p>
         </section>
 
@@ -67,6 +81,22 @@ export default function Home() {
         {/* Social Links */}
         <div className="mt-16 flex flex-wrap gap-6">
           <a 
+            href="https://twitter.com" 
+            className="text-small underline hover:text-gray-900 dark:hover:text-white transition-colors"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            x
+          </a>
+          <a 
+            href="https://linkedin.com" 
+            className="text-small underline hover:text-gray-900 dark:hover:text-white transition-colors"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            linkedin
+          </a>
+          <a 
             href="https://github.com" 
             className="text-small underline hover:text-gray-900 dark:hover:text-white transition-colors"
             target="_blank"
@@ -75,12 +105,10 @@ export default function Home() {
             github
           </a>
           <a 
-            href="https://twitter.com" 
+            href="mailto:josh@outlit.ai" 
             className="text-small underline hover:text-gray-900 dark:hover:text-white transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
           >
-            x (twitter)
+            email me
           </a>
         </div>
       </div>

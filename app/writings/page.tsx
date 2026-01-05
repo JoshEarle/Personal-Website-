@@ -20,11 +20,7 @@ export default function WritingsPage() {
       <div className="max-w-3xl mx-auto">
         {/* Header: Name, Navbar, Theme Toggle */}
         <div className="flex items-center justify-between mb-16 relative">
-          <div className="w-24">
-            <Link href="/" className="text-small underline hover:text-gray-900 dark:hover:text-white transition-colors">
-              ← back
-            </Link>
-          </div>
+          <h1 className="text-medium">josh earle</h1>
           <Navbar />
           <div className="w-16">
             <ThemeToggle />
@@ -33,7 +29,7 @@ export default function WritingsPage() {
         
         {/* Page Title */}
         <div className="mb-16">
-          <h1 className="text-medium mb-2">writings</h1>
+          <h2 className="text-medium mb-2">writings</h2>
         </div>
 
         {/* Writings List */}
