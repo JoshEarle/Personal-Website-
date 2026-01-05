@@ -9,7 +9,7 @@ export default function Home() {
       <div className="max-w-3xl mx-auto">
         {/* Header: Name, Navbar, Theme Toggle */}
         <div className="flex items-center justify-between mb-16 relative">
-          <h1 className="text-medium">Josh Earle</h1>
+          <h1 className="text-medium">josh earle</h1>
           <Navbar />
           <div className="w-16">
             <ThemeToggle />
@@ -21,16 +21,28 @@ export default function Home() {
 
         {/* About Section */}
         <section className="mb-16">
-          <h2 className="text-medium mb-4">About</h2>
+          <h2 className="text-medium mb-4">about</h2>
           <p className="text-regular mb-6 leading-relaxed">
-            I&apos;m an independent (design) engineer who designs through code. I care deeply about crafting elegant, intuitive user interfaces while writing clean, scalable code.
+            i&apos;m josh, currently building{" "}
+            <a 
+              href="https://outlit.ai/" 
+              className="underline hover:text-gray-900 dark:hover:text-white transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              outlit
+            </a>. see how customers find you, use your product, and convert to paid.
+            <br /><br />
+            i built the hardest naruto trivia game on the internet (give it a shot).
+            <br /><br />
+            working out of coffee shops around the mission and north beach in san francisco.
           </p>
         </section>
 
         {/* Writings Section */}
         <section>
           <div className="flex items-baseline justify-between mb-6">
-            <h2 className="text-medium">Writings</h2>
+            <h2 className="text-medium">writings</h2>
             <Link 
               href="/writings" 
               className="text-small text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
@@ -41,10 +53,10 @@ export default function Home() {
           <div className="space-y-6">
             <article className="flex items-center justify-between pb-4">
               <Link 
-                href="/writings" 
+                href="/writings/hello-world" 
                 className="text-regular hover:text-gray-900 dark:hover:text-white transition-colors cursor-pointer"
               >
-                Hello, World!
+                hello, world!
               </Link>
               <div className="flex-1 border-b border-dotted border-gray-300 dark:border-gray-700 mx-4"></div>
               <span className="text-small text-gray-600 dark:text-gray-500 whitespace-nowrap">NOV 30, 25</span>
@@ -60,7 +72,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            GitHub
+            github
           </a>
           <a 
             href="https://twitter.com" 
@@ -68,7 +80,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            X (Twitter)
+            x (twitter)
           </a>
         </div>
       </div>

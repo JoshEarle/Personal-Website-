@@ -7,7 +7,7 @@ import { notFound } from "next/navigation";
 // For now, I'll create a simple example
 const writings: Record<string, { title: string; date: string; content: string }> = {
   "hello-world": {
-    title: "Hello, World!",
+    title: "hello, world!",
     date: "NOV 30, 25",
     content: `This is where your writing content would go. You can write in plain text, or use markdown if you set that up.
 
@@ -31,7 +31,7 @@ export default function WritingPage({ params }: { params: { slug: string } }) {
         <div className="flex items-center justify-between mb-16 relative">
           <div className="w-24">
             <Link href="/writings" className="text-small underline hover:text-gray-900 dark:hover:text-white transition-colors">
-              ← Back
+              ← back
             </Link>
           </div>
           <Navbar />

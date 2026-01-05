@@ -6,13 +6,13 @@ import Link from "next/link";
 const pics = [
   {
     id: 1,
-    title: "Photo 1",
+    title: "photo 1",
     imageUrl: "/images/photo1.jpg",
     date: "NOV 30, 25",
   },
   {
     id: 2,
-    title: "Photo 2",
+    title: "photo 2",
     imageUrl: "/images/photo2.jpg",
     date: "NOV 25, 25",
   },
@@ -27,7 +27,7 @@ export default function PicsPage() {
         <div className="flex items-center justify-between mb-16 relative">
           <div className="w-24">
             <Link href="/" className="text-small underline hover:text-gray-900 dark:hover:text-white transition-colors">
-              ← Back
+              ← back
             </Link>
           </div>
           <Navbar />
@@ -38,7 +38,7 @@ export default function PicsPage() {
         
         {/* Page Title */}
         <div className="mb-16">
-          <h1 className="text-medium mb-2">Pics</h1>
+          <h1 className="text-medium mb-2">pics</h1>
         </div>
 
         {/* Pics Grid */}
