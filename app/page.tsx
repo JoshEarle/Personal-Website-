@@ -44,7 +44,7 @@ export default function Home() {
             <br /><br />
             previously a product designer building design systems for boring enterprise software.
             <br /><br />
-            interested in AI, nuclear energy, agritech, and fantasy football.
+            interested in AI, nuclear economics, agritech, and fantasy football.
             <br /><br />
             i write about things i find interesting and build things like{" "}
             <a 
@@ -63,7 +63,7 @@ export default function Home() {
         {/* Social Links */}
         <div className="mt-16 flex flex-wrap gap-6">
           <a 
-            href="https://twitter.com" 
+            href="https://x.com/RealEarle" 
             className="text-small underline hover:text-gray-900 dark:hover:text-white transition-colors"
             target="_blank"
             rel="noopener noreferrer"
@@ -71,7 +71,7 @@ export default function Home() {
             x
           </a>
           <a 
-            href="https://linkedin.com" 
+            href="https://www.linkedin.com/in/joshearle/" 
             className="text-small underline hover:text-gray-900 dark:hover:text-white transition-colors"
             target="_blank"
             rel="noopener noreferrer"
@@ -79,7 +79,7 @@ export default function Home() {
             linkedin
           </a>
           <a 
-            href="https://github.com" 
+            href="https://github.com/JoshEarle" 
             className="text-small underline hover:text-gray-900 dark:hover:text-white transition-colors"
             target="_blank"
             rel="noopener noreferrer"
