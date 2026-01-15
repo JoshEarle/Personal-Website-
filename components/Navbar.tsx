@@ -13,7 +13,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="flex flex-1 justify-center gap-6">
+    <nav className="flex justify-center gap-6">
       {navItems.map((item) => (
         <Link
           key={item.href}
