@@ -3,16 +3,8 @@ import Navbar from "@/components/Navbar";
 import Link from "next/link";
 
 // This is where you'd store your writings data
-// For now, I'll create a simple example structure
-const writings = [
-  {
-    id: 1,
-    title: "hello, world!",
-    date: "NOV 30, 25",
-    slug: "hello-world",
-  },
-  // Add more writings here as you create them
-];
+// Add more writings here as you create them
+const writings = [];
 
 export default function WritingsPage() {
   return (
@@ -33,25 +25,36 @@ export default function WritingsPage() {
         </div>
 
         {/* Writings List */}
-        <div className="space-y-6">
-          {writings.map((writing) => (
-            <article 
-              key={writing.id}
-              className="flex items-center justify-between pb-4"
-            >
-              <Link
-                href={`/writings/${writing.slug}`}
-                className="text-regular hover:text-gray-900 dark:hover:text-white transition-colors cursor-pointer"
+        {writings.length > 0 ? (
+          <div className="space-y-6">
+            {writings.map((writing) => (
+              <article 
+                key={writing.id}
+                className="flex items-center justify-between pb-4"
               >
-                {writing.title}
-              </Link>
-              <div className="flex-1 border-b border-dotted border-gray-300 dark:border-gray-700 mx-4"></div>
-              <span className="text-small text-gray-600 dark:text-gray-500 whitespace-nowrap">
-                {writing.date}
-              </span>
-            </article>
-          ))}
-        </div>
+                <Link
+                  href={`/writings/${writing.slug}`}
+                  className="text-regular hover:text-gray-900 dark:hover:text-white transition-colors cursor-pointer"
+                >
+                  {writing.title}
+                </Link>
+                <div className="flex-1 border-b border-dotted border-gray-300 dark:border-gray-700 mx-4"></div>
+                <span className="text-small text-gray-600 dark:text-gray-500 whitespace-nowrap">
+                  {writing.date}
+                </span>
+              </article>
+            ))}
+          </div>
+        ) : (
+          <div className="text-center py-16">
+            <p className="text-regular text-gray-600 dark:text-gray-400 mb-4">
+              No writings yet.
+            </p>
+            <p className="text-small text-gray-500 dark:text-gray-500">
+              Add writings by creating markdown files in <code className="bg-gray-100 dark:bg-gray-900 px-2 py-1 rounded">app/writings/[slug]/</code> and updating the writings array in <code className="bg-gray-100 dark:bg-gray-900 px-2 py-1 rounded">app/writings/page.tsx</code>
+            </p>
+          </div>
+        )}
       </div>
     </main>
   );
