@@ -54,11 +54,8 @@ export default function WritingsPage() {
           </div>
         ) : (
           <div className="text-center py-16">
-            <p className="text-regular text-gray-600 dark:text-gray-400 mb-4">
-              No writings yet.
-            </p>
-            <p className="text-small text-gray-500 dark:text-gray-500">
-              Add writings by creating markdown files in <code className="bg-gray-100 dark:bg-gray-900 px-2 py-1 rounded">app/writings/[slug]/</code> and updating the writings array in <code className="bg-gray-100 dark:bg-gray-900 px-2 py-1 rounded">app/writings/page.tsx</code>
+            <p className="text-regular text-gray-600 dark:text-gray-400">
+              coming soon
             </p>
           </div>
         )}
