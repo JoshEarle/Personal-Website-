@@ -2,9 +2,16 @@ import ThemeToggle from "@/components/ThemeToggle";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 
+interface Writing {
+  id: number;
+  title: string;
+  date: string;
+  slug: string;
+}
+
 // This is where you'd store your writings data
 // Add more writings here as you create them
-const writings = [];
+const writings: Writing[] = [];
 
 export default function WritingsPage() {
   return (
