@@ -57,16 +57,18 @@ const pics = [
 export default function PicsPage() {
   return (
     <main className="min-h-screen px-6 py-16 md:px-12 md:py-24 relative">
-      <div className="max-w-4xl mx-auto">
-        {/* Header: Name, Navbar, Theme Toggle */}
-        <div className="flex items-center justify-between mb-16 relative">
+      {/* Header: Name, Navbar, Theme Toggle - Fixed width container */}
+      <div className="max-w-3xl mx-auto mb-16">
+        <div className="flex items-center justify-between relative">
           <h1 className="text-medium">josh earle</h1>
           <Navbar />
           <div className="w-16">
             <ThemeToggle />
           </div>
         </div>
-        
+      </div>
+      
+      <div className="max-w-4xl mx-auto">
         {/* Page Title */}
         <div className="mb-16">
           <h2 className="text-medium mb-2">pics</h2>
