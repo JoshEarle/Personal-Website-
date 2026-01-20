@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { PostHogProvider } from "@/components/PostHogProvider";
+import { OutlitProvider } from "@/components/OutlitProvider";
 
 export const metadata: Metadata = {
   title: "josh earle",
@@ -33,7 +34,9 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <PostHogProvider>{children}</PostHogProvider>
+        <PostHogProvider>
+          <OutlitProvider>{children}</OutlitProvider>
+        </PostHogProvider>
       </body>
     </html>
   );
